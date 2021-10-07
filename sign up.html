@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title> sign up</title>
+        <link rel="stylesheet" type="text/css" href="css/signup.css">
+         
+        <script>
+            function check(){
+                n=document.getElementById('n').value;
+                e=document.getElementById('e').value;
+                p=document.getElementById('p').value;
+                r=document.getElementById('r').value;
+                x=/^\w+(\s\w+){2}$/;
+                y= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/; 
+                z= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+                a= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+ /* for password/^
+  (?=.*\d)          // should contain at least one digit
+  (?=.*[a-z])       // should contain at least one lower case
+  (?=.*[A-Z])       // should contain at least one upper case
+  [a-zA-Z0-9]{8,}   // should contain at least 8 from the mentioned characters
+$/
+*/
+            if(x.test(n)==true) {
+                document.getElementById('b').innerHTML="<div style='color:green ;'>good name</div>";
+            } 
+                else{
+                    document.getElementById('b').innerHTML="<div style='color:green ;'>failed name</div>";
+                }
+          if(y.test(e)==true) {
+                 document.getElementById('c').innerHTML="<div style='color:green ;'>good email</div>";
+            } 
+                else{
+                   document.getElementById('c').innerHTML="<div style='color:green ;'>failed email</div>";
+                }
+          if(z.test(p)==true) {
+            document.getElementById('d').innerHTML="<div style='color:green ;'> valid</div>";
+            } 
+                else{
+                    document.getElementById('d').innerHTML="<div style='color:green ;'>password should contain atleast one number and one special character</div>";
+                }
+            if(a.test(r)==true) {
+                document.getElementById('f').innerHTML="<div style='color:green ;'> valid</div>";
+            } 
+                else{
+                    document.getElementById('f').innerHTML="<div style='color:green ;'>password should contain atleast one number and one special character</div>";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <section class="header">
+            <div class="container">
+                <div class="header_head">
+                    <img src="images/logo.svg" alt="Logo">
+                </div>
+            </div>
+        </section>
+        <div id="login-box">
+            <div class="left-box">
+                <h1>sign up</h1>
+                <input type="text" name="username" placeholder="Username" id="n" />
+                 <div id="b"></div>
+                <input type="text" name="email" placeholder="Email" id="e" />
+                 <div id="c"></div>
+                <input type="password" name="password" placeholder="password" id="p" />
+                 <div id="d"></div>
+                <input type="password"name="password2" placeholder="Retype password" id="r" />
+                 <div id="f"></div>
+                <input type="submit" name="signup-bottom" value="Sign Up" onclick="check();" /> 
+            </div>
+            <div class="right-box">
+                <span class="signinwith">sign in with<br/>Social Network 
+                </span>
+                <button class="Social Facebook"> Log in with Facebook </button>
+                <button class="Social Twitter"> Log in with Twitter</button>
+                <button class="Social Google"> Log in with Google+</button>
+            </div>
+            <div class="or">OR</div>
+            
+        </div>
+    </body>
+</html>
