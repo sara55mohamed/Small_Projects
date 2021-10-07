@@ -1,0 +1,368 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #787878;
+    line-height: 1.5;
+}
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+/*navbar*/
+.navbar-collapse {
+    font-size: 0.93rem;
+    border-right: 0.5px solid #DDD;
+}
+.navbar-collapse ul li a {
+    color: #242424 !important;
+}
+.navbar-collapse ul li a:hover {
+    color: #787878 !important;
+}
+.navbar .icons {
+    color: #242424;
+}
+
+@media screen and (max-width: 992px) and (min-width: 0){
+    .navbar .icons {
+        display: none;
+    }
+}
+/*end navbar*/
+
+/*header*/
+.carousel-caption {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+.carousel-caption .btn {
+    padding: 10px 25px;
+    transition: transform 0.5s;
+}
+.carousel-caption .btn:hover {
+    transform: translatey(-2px);
+}
+.carousel-caption .first {
+    background-color: #00d5ee;
+    color: white;
+}
+.carousel-caption .second:hover {
+    background-color: white;
+    color: #242424 !important;
+}
+.carousel-caption h1 {
+    font-size: 6rem;
+}
+.carousel-caption p {
+    font-size: 1.4rem;
+}
+.carousel-control-prev {
+    z-index: 3;
+    left: 0;
+}
+.carousel-control-next {
+    z-index: 3;
+    left: 0;
+    top: 16%;
+}
+.carousel-indicators {
+    z-index: 3;
+}
+.carousel-indicators li {
+    height: 2px;
+    width: 40px;
+}
+
+@media screen and (max-width: 992px) and (min-width: 0){
+    .carousel-caption h1 {
+        font-size: 4rem;
+    }
+    .carousel-caption p {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .carousel-control-next, .carousel-control-prev{
+        opacity: 0;
+    }
+}
+/*end header*/
+
+/*about section*/
+.about .content {
+    width: 60%;
+}
+.about .content h6 {
+    color: #242424;
+    font-size: 0.93rem;
+    font-weight: 600;
+}
+.about .content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.about .content p span {
+    color: #00c3da;
+    font-weight: 400;
+}
+.about .content .btn {
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 992px) and (min-width: 0){
+    .about .content h6 {
+        font-size: 0.9rem;
+    }
+    .about .content p {
+        font-size: 1.3rem;
+    }
+    .about .content .btn {
+        font-size: 0.7rem;
+        padding: 15px 30px !important;
+    }
+}
+/*end about*/
+
+/*team section*/
+.team h3 {
+    color: #242424;
+    font-size: 3rem;
+}
+.team h3::before {
+    content: "C";
+    color: #EEE;
+    position: absolute;
+    left: 48%;
+    font-size: 5rem;
+    transform: translateY(-30%);
+    z-index: -1;
+}
+.team .head p {
+    font-size: 1.2rem;
+}
+.team .card .layer {
+    background-color: rgba(0, 195, 218, 0.9);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s;
+    transition: transform 0.3s;
+}
+.team .card:hover .layer {
+    opacity: 1;
+    transform: translateY(0);
+}
+.team .card .caption h5 {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 992px) and (min-width: 0){
+    .team .card {
+        margin-bottom: 30px;
+    }
+}
+/*end team*/
+
+/*services section*/
+.services {
+    background-color: #1f1f1f;
+    opacity: 0.7;
+}
+.services .icons i {
+    font-size: 4rem;
+    color: rgb(0, 112, 103);
+}
+.services .content h4 {
+    font-size: 1rem;
+}
+.services .left {
+    padding: 50px 30px 0px 0px;
+}
+.services .mid, .services .right {
+    padding-top: 70px;
+}
+.services .left h3 {
+    font-size: 3rem;
+}
+.services h3::before {
+    content: "W";
+    color: #555;
+    opacity: 0.7;
+    position: absolute;
+    left: -2.5%;
+    font-size: 4.5rem;
+    transform: translateY(-27%);
+    z-index: -1;
+}
+
+@media screen and (max-width: 992px) and (min-width: 0){
+    .services .content {
+        margin-bottom: 30px;
+    }
+    .services .left {
+        text-align: center;
+    }
+    .services h3::before {
+        left: 28%;
+    }
+}
+@media screen and (max-width: 768px){
+    .services h3::before {
+        left: 21%;
+    }
+}
+/*end services*/
+
+/*start pricing*/
+.pricing {
+    background-color: #f7f7f7;
+    z-index: -2;
+}
+.pricing .head h3 {
+    color: #242424;
+    font-size: 3rem;
+}
+.pricing .head h3::before {
+    content: "C";
+    color: #EEE;
+    position: absolute;
+    left: 48%;
+    font-size: 5rem;
+    transform: translateY(-30%);
+    z-index: -1;
+}
+.pricing .head p {
+    font-size: 1.2rem;
+}
+.pricing .card h5 {
+    font-size: 0.9rem;
+    color: #242424;
+}
+.pricing .card i {
+    color: #242424;
+    font-size: 1.1rem;
+}
+.pricing .card h2 {
+    color: #242424;
+    font-size: 4rem;
+}
+.pricing .card .hr {
+    height: 1px;
+    background-color: #EEE;
+}
+.pricing .card .btn {
+    background-color: #00c3da;
+    font-size: 0.9rem;
+}
+.pricing .third .btn {
+    font-size: 1rem;
+}
+.pricing .third {
+    transform: translateY(-5%);
+}
+.pricing .cards .third .best p {
+    background-color: #00c3da;
+    font-size: 0.9rem;
+}
+.pricing .card .change i, .pricing .card .change h2 {
+    color: #00c3da;
+}
+/*slider*/
+.pricing .slider .carousel-inner {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.pricing .slider .carousel-inner .caption {
+    top: -50px;
+    padding: 70px 100px;
+    z-index: 1;
+}
+.pricing .slider .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    background-color: #00c3da;
+}
+.pricing .carousel-item img {
+    width: 100px; 
+    z-index: 2;  
+}
+.pricing .carousel-item h3 {
+    color: #242424;
+}
+.pricing .carousel-item span {
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 992px) and (min-width: 0){
+    .pricing .card {
+        margin-bottom: 30px;
+    }
+    .pricing .third {
+        transform: translateY(0);
+    }
+    .pricing .third .btn {
+        margin-bottom: 0px !important;
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 0){
+    .pricing .slider .carousel-inner {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+/*end pricing*/
+
+/*contact section*/
+.contact .form {
+    padding: 100px 70px;
+}
+.contact h3::before {
+    content: "G";
+    color: #EEE;
+    position: absolute;
+    left: 14%;
+    font-size: 4rem;
+    transform: translateY(-45%);
+    z-index: -1;
+}
+.contact .form h3, .contact .form label {
+    color: #242424;
+}
+.contact .form p {
+    font-size: 0.9rem;
+}
+.contact .form label {
+    font-size: 0.7rem;
+}
+.contact .form .btn {
+    background-color: #00c3da;
+    font-size: 0.9rem;
+}
+.contact .form input, .contact .form textarea {
+    border-color: #EEE !important;
+}
+.contact .form textarea {
+    resize: none;
+}
+
+@media screen and (max-width: 992px) and (min-width: 0){
+    .contact h3::before {
+        left: 7%;
+    }
+    .contact .form {
+        width: 80%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 768px){
+    .contact h3::before {
+        left: 8%;
+    }
+}
+/*end contact*/
